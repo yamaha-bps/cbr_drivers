@@ -25,7 +25,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
           libgtest-dev \
-          libopencv-dev
+          libopencv-dev \
+          libhidapi-dev
       - name: Configure CMake
         run: |
           cmake -B ${{ github.workspace }}/build \
@@ -53,7 +54,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
           libgtest-dev \
-          libopencv-dev
+          libopencv-dev \
+          libhidapi-dev
       - name: Configure CMake
         run: |
           cmake -B ${{ github.workspace }}/build \
