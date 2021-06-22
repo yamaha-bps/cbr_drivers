@@ -40,4 +40,4 @@ target_link_libraries(target
 ## Examples
 - [V4L2](examples/v4l2_example.cpp)
 - [Keyboard](examples/keyboard_example.cpp)
-- [UDP](examples/udp_examples.cpp)
+- [UDP](examples/udp_example.cpp)
