@@ -80,4 +80,16 @@ jobs:
           lcov -c --no-external --directory . -d build/CMakeFiles -o coverage.info
           lcov --list coverage.info
           # bash <(curl -s https://codecov.io/bash) -f coverage.info
-
+	docs:
+		needs: [build]
+		runs-on: ubuntu-latest
+		steps:
+			- uses: actions/checkout@v1
+			- uses: mattnotmitt/doxygen-action@v1
+				with:
+					doxyfile-path: '.github/Doxygen'
+			- uses: peaceiris/actions-gh-pages@v3
+				with:
+					github_token: ${{ secrets.GITHUB_TOKEN }
+					publish_branch: gh-pages
+					publish_dir: ./docs/html
