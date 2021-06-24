@@ -80,4 +80,3 @@ jobs:
           lcov -c --no-external --directory . -d build/CMakeFiles -o coverage.info
           lcov --list coverage.info
           # bash <(curl -s https://codecov.io/bash) -f coverage.info
-
