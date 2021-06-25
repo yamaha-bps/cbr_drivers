@@ -3,7 +3,7 @@
 [![build_and_test](https://github.com/yamaha-bps/cbr_drivers/actions/workflows/build_and_test.yaml/badge.svg)](https://github.com/yamaha-bps/cbr_drivers/actions/workflows/build_and_test.yaml)
 
 ## Overview
-A bundle of useful driver tools for linux devices.
+A bundle of useful driver tools for linux devices.  
 
 ### V4L2
 A V4L2 driver for capturing image streams. A user can supply a callback that is called on frames containing new buffers, as well as custom allocation and de-allocation functions for those buffers.
@@ -35,9 +35,12 @@ target_link_libraries(target
   cbr_drivers::cbr_drivers_udp
 )
 ```
+[Reference](https://yamaha-bps.github.io/cbr_drivers/)
 
 
 ## Examples
 - [V4L2](examples/v4l2_example.cpp)
 - [Keyboard](examples/keyboard_example.cpp)
 - [UDP](examples/udp_example.cpp)
+
+
